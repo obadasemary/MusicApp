@@ -11,6 +11,8 @@ struct MusicPlayer: View {
     
     // MARK: - PROPERTIES
     
+    let namespace: Namespace.ID
+    
     // MARK: - BODY
     
     var body: some View {
@@ -20,6 +22,7 @@ struct MusicPlayer: View {
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(16)
                 .padding()
+                .matchedGeometryEffect(id: "animation", in: namespace)
             
             HStack {
                 VStack(alignment: .leading) {
@@ -63,7 +66,8 @@ struct MusicPlayer: View {
 }
 
 struct MusicPlayer_Previews: PreviewProvider {
+    
     static var previews: some View {
-        MusicPlayer()
+        MusicPlayer(namespace: Namespace.init().wrappedValue)
     }
 }
