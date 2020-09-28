@@ -8,12 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // MARK: - PROPERTIES
+    
+    @Namespace private var ns
+    @State private var showAlbum: Bool = false
+    
+    // MARK: - BODY
+    
     var body: some View {
         VStack {
-            MusicPlayer()
+//            MusicPlayer()
             Spacer()
-            MusicPlayerBar()
+//            MusicPlayerBar()
+            
+            if showAlbum {
+                MusicPlayer(namespace: ns)
+            } else {
+                MusicPlayerBar(namespace: ns)
+            }
         }
+        .onTapGesture(count: 1, perform: {
+            withAnimation(.spring()) {
+                
+                self.showAlbum.toggle()
+            }
+        })
     }
 }
 
