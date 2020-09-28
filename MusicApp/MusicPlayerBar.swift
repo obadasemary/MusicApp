@@ -11,6 +11,7 @@ struct MusicPlayerBar: View {
     
     // MARK: - PROPERTIES
     
+    let namespace: Namespace.ID
     
     // MARK: - BODY
     
@@ -21,6 +22,7 @@ struct MusicPlayerBar: View {
                 .frame(width: 50, height: 50)
                 .cornerRadius(4)
                 .padding()
+                .matchedGeometryEffect(id: "animation", in: namespace)
             
             Text("Valhalla")
                 .font(.headline)
@@ -38,6 +40,6 @@ struct MusicPlayerBar: View {
 
 struct MusicPlayerBar_Previews: PreviewProvider {
     static var previews: some View {
-        MusicPlayerBar()
+        MusicPlayerBar(namespace: Namespace.init().wrappedValue)
     }
 }
