@@ -15,7 +15,24 @@ struct MusicPlayerBar: View {
     // MARK: - BODY
     
     var body: some View {
-        Text("MUSIC PLAYER BAR")
+        HStack {
+            Image("cover")
+                .resizable()
+                .frame(width: 50, height: 50)
+                .cornerRadius(4)
+                .padding()
+            
+            Text("Valhalla")
+                .font(.headline)
+            
+            Spacer()
+            
+            Image(systemName: "play.fill")
+            Image(systemName: "forward.fill")
+                .padding(.trailing, 10)
+        }
+        .frame(maxWidth: .infinity, maxHeight: 60)
+        .background(Color(.lightGray))
     }
 }
 
