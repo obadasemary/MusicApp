@@ -15,7 +15,7 @@ struct MusicPlayer: View {
     
     var body: some View {
         VStack {
-            Image("cover")
+            Image("coverExtra")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(16)
@@ -32,7 +32,7 @@ struct MusicPlayer: View {
                         .font(.title)
                         .fontWeight(.light)
                         .opacity(0.5)
-                    foregroundColor(.white)
+                        .foregroundColor(.white)
                 }
                 .padding()
                 Spacer()
@@ -58,7 +58,7 @@ struct MusicPlayer: View {
             Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(.brown))
+        .background(Color(.systemPink))
     }
 }
 
