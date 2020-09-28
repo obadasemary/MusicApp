@@ -11,6 +11,7 @@
 		AFB62BF9252208E4006AC261 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB62BF8252208E4006AC261 /* ContentView.swift */; };
 		AFB62BFB252208E5006AC261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB62BFA252208E5006AC261 /* Assets.xcassets */; };
 		AFB62BFE252208E5006AC261 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB62BFD252208E5006AC261 /* Preview Assets.xcassets */; };
+		AFB62C0725220953006AC261 /* MusicPlayerBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB62C0625220953006AC261 /* MusicPlayerBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		AFB62BFA252208E5006AC261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFB62BFD252208E5006AC261 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AFB62BFF252208E5006AC261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFB62C0625220953006AC261 /* MusicPlayerBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				AFB62BF6252208E4006AC261 /* MusicAppApp.swift */,
 				AFB62BF8252208E4006AC261 /* ContentView.swift */,
+				AFB62C0625220953006AC261 /* MusicPlayerBar.swift */,
 				AFB62BFA252208E5006AC261 /* Assets.xcassets */,
 				AFB62BFF252208E5006AC261 /* Info.plist */,
 				AFB62BFC252208E5006AC261 /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB62C0725220953006AC261 /* MusicPlayerBar.swift in Sources */,
 				AFB62BF9252208E4006AC261 /* ContentView.swift in Sources */,
 				AFB62BF7252208E4006AC261 /* MusicAppApp.swift in Sources */,
 			);
